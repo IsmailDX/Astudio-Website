@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        neutraface: "Neutraface",
+        neutrafaceTextBook: "NeutrafaceTextBook",
+      },
       colors: {
         primary: "#3F3B38",
       },
