@@ -10,17 +10,19 @@ const Hero = () => {
           alt="HeroImg"
           className="w-full h-full object-cover"
         />
-        <div
-          className="absolute lg:top-[27%] flex lg:flex-row lg:items-end lg:gap-20 lg:p-2 lg:justify-center 
+        <div className="w-full h-fit flex justify-center">
+          <div
+            className="absolute lg:top-[27%] flex lg:flex-row lg:items-end lg:gap-20 lg:p-2 lg:justify-center
         flex-col items-center gap-20 top-0 justify-end"
-        >
-          <div>
-            <button className="border-white text-white font-neutraface flex items-center gap-1 whitespace-nowrap w-full">
-              SEE OUR WORK <IoIosArrowRoundForward size={30} />
-            </button>
-          </div>
-          <div className="w-full">
-            <img src={"/hero/A.png"} alt="logo" width={550} height={550} />
+          >
+            <div>
+              <button className="border-white text-white font-neutraface flex items-center gap-1 whitespace-nowrap w-full">
+                SEE OUR WORK <IoIosArrowRoundForward size={30} />
+              </button>
+            </div>
+            <div className="w-full">
+              <img src={"/hero/A.png"} alt="logo" width={550} height={550} />
+            </div>
           </div>
         </div>
       </div>
