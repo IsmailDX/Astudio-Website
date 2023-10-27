@@ -21,6 +21,8 @@ const Navbar = () => {
 
   const handleClick = () => {
     setOpen(!open);
+    setWorkIcon(false);
+    setShowWorkItems(false);
   };
 
   const toggleWorkItems = () => {
@@ -34,7 +36,14 @@ const Navbar = () => {
         className="lg:w-[80%] lg:pl-44 lg:px-0 flex justify-between lg:items-end py-6
        w-full sm:px-10 px-3 items-center relative overflow-hidden bg-white z-10"
       >
-        <h1 className="text-4xl tracking-widest font-neutraface">ASTUDIO</h1>
+        <h1 className="lg:text-4xl text-3xl tracking-widest font-neutraface z-auto">
+          ASTUDIO
+        </h1>
+
+        <div className="absolute object-contain h-full lg:left-[55%] lg:w-[550px] w-[450px] left-[35%] -z-10">
+          <img src={"/hero/Rectangle.png"} alt="Rectangle" />
+        </div>
+
         <p className="hidden lg:block">START A PROJECT</p>
         <Image
           src={Icon}
@@ -42,42 +51,6 @@ const Navbar = () => {
           className="block lg:hidden"
           onClick={handleClick}
         />
-      </div>
-
-      {/* Desktop Nav */}
-
-      <div
-        className={`fixed w-[20%] h-screen top-0 right-0 hidden lg:flex flex-col justify-center pl-5 ${
-          !open ? "z-10" : "z-0"
-        }`}
-      >
-        <ul className="w-full space-y-4 pb-7 pl-4">
-          {links.map((item) => (
-            <li key={item.page} className="text-lg font-neutraface">
-              {item.page === "WORK" ? (
-                <span className="flex items-center gap-2">
-                  {item.page}
-                  {workIcon ? (
-                    <VscChevronUp onClick={toggleWorkItems} />
-                  ) : (
-                    <VscChevronDown onClick={toggleWorkItems} />
-                  )}
-                </span>
-              ) : (
-                item.page
-              )}
-              {item.page === "WORK" && showWorkItems && (
-                <ul className="space-y-4 pt-4">
-                  {workItems.map((workitem) => (
-                    <li key={workitem} className="font-neutrafaceTextBook pl-6">
-                      {workitem}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ul>
       </div>
 
       {/* Mobile Nav */}
