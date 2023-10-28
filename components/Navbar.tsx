@@ -36,11 +36,11 @@ const Navbar = () => {
         className="lg:w-[80%] lg:pl-44 lg:px-0 flex justify-between lg:items-end py-6
        w-full sm:px-10 px-3 items-center relative overflow-hidden bg-white z-10"
       >
-        <h1 className="lg:text-4xl text-3xl tracking-widest font-neutraface z-auto">
+        <h1 className="lg:text-4xl text-3xl tracking-widest font-neutraface z-auto text-primary">
           ASTUDIO
         </h1>
 
-        <div className="absolute object-contain h-full lg:left-[55%] lg:w-[550px] w-[450px] left-[35%] -z-10">
+        <div className="absolute object-contain h-full lg:left-[55%] lg:w-[640px] w-[450px] left-[35%] -z-10">
           <img src={"/hero/Rectangle.png"} alt="Rectangle" />
         </div>
 

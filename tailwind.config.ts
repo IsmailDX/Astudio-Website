@@ -7,6 +7,21 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      s2: { min: "0px", max: "384px" },
+
+      s1: { min: "385px", max: "639px" },
+
+      sm: "640px",
+
+      md: "768px",
+
+      lg: "1024px",
+
+      xl: "1280px",
+
+      "2xl": "1536px",
+    },
     extend: {
       fontFamily: {
         neutraface: "Neutraface",

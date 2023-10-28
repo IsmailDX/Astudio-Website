@@ -36,10 +36,13 @@ const Hero = () => {
           >
             <div className="md:mr-auto md:ml-0 md:pl-12">
               <button
-                className="border-white text-white font-neutraface flex items-center lg:gap-1 
-                gap-3 whitespace-nowrap w-full border lg:p-4 px-8 p-6 uppercase text-lg font-medium"
+                className="hover:before:bg-redborder-red-500 relative w-full lg:p-4 px-8 p-6 overflow-hidden border border-white bg-transparent text-white shadow-2xl 
+              transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all 
+              before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full flex lg:gap-1 
+              gap-3 font-neutraface"
               >
-                SEE OUR WORK <IoIosArrowRoundForward size={30} />
+                <span className="relative z-10">SEE OUR WORK</span>
+                <IoIosArrowRoundForward size={30} className="z-10" />
               </button>
             </div>
             <div className="w-full sm:max-w-[550px] pr-2 md:ml-auto md:mr-0 mr-auto max-w-[450px]">
