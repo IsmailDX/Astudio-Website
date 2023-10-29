@@ -55,7 +55,7 @@ const Navbar = () => {
   return (
     <>
       <div className="lg:w-full relative">
-        <div className="flex justify-between py-6 w-full sm:px-10 px-3 items-center fixed overflow-hidden bg-white z-10">
+        <div className="flex justify-between py-6 w-full sm:px-10 px-3 items-center fixed overflow-hidden bg-white z-50">
           <h1 className="lg:text-4xl text-3xl tracking-widest font-neutraface z-auto text-primary">
             ASTUDIO
           </h1>
@@ -119,8 +119,8 @@ const Navbar = () => {
         </ul>
         <button
           className="hover:before:bg-redborder-red-500 relative w-full lg:p-4 px-8 p-6 overflow-hidden border border-black bg-transparent text-black shadow-2xl 
-              transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all 
-              before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full flex lg:gap-1 
+              transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#BFE5E6] before:transition-all 
+              before:duration-500 hover:text-black hover:before:left-0 hover:before:w-full flex lg:gap-1 
               gap-3 font-neutraface"
         >
           <span className="relative">START A PROJECT</span>

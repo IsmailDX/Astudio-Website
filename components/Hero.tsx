@@ -35,12 +35,7 @@ const Hero = () => {
           lg:justify-center lg:bottom-auto flex-col items-center gap-24 bottom-0 justify-end lg:w-auto w-full"
           >
             <div className="md:mr-auto md:ml-0 md:pl-12">
-              <button
-                className="hover:before:bg-redborder-red-500 relative w-full lg:p-4 px-8 p-6 overflow-hidden border border-white bg-transparent text-white shadow-2xl 
-              transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all 
-              before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full flex items-center lg:gap-1 
-              gap-3 font-neutraface"
-              >
+              <button className="fancyButton">
                 <span className="relative">SEE OUR WORK</span>
                 <IoIosArrowRoundForward size={30} className="relative" />
               </button>

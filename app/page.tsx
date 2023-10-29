@@ -1,4 +1,4 @@
-import { Goal, Hero } from "@/components";
+import { Cases, Goal, Hero } from "@/components";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
     <main>
       <Hero />
       <Goal />
+      <Cases />
     </main>
   );
 }
