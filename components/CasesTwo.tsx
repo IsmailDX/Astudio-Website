@@ -5,14 +5,14 @@ const CasesTwo = () => {
   return (
     <div className="w-full pb-20">
       <div className="flex md:flex-row flex-col relative lg:gap-24 md:gap-8 gap-12">
-        <div className="lg:pl-[172px] md:pl-[102px] md:pr-0 sm:pr-[170px] pr-5  pl-5 w-fit flex flex-col justify-end">
+        <div className="lg:pl-[172px] md:pl-[102px] md:pr-0 sm:pr-[110px] pr-5  pl-5 w-fit flex flex-col justify-end">
           <div className="flex flex-col">
             <h2 className="uppercase text-primary text-lg font-neutraface whitespace-nowrap">
               Video — mancherster
             </h2>
             <p className="text-sm pt-1">Production</p>
           </div>
-          <p className="max-w-[300px] text-gray-500">
+          <p className="md:max-w-[300px] text-gray-500">
             As a one-stop shop, we combine the creativity and storytelling of an
             ad agency with the technical expertise and execution of a production
             comany. We create brand stories through strategy and market
