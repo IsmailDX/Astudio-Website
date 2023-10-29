@@ -3,7 +3,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Cases = () => {
   return (
-    <div className="w-full lg:px-[172px] md:px-[102px] mx-auto px-5 py-28">
+    <div className="w-full lg:px-[172px] md:px-[102px] mx-auto px-5 py-24">
       <h1 className="font-neutraface text-3xl text-primary pb-11">USE CASES</h1>
       <div className="w-full flex md:flex-row flex-col md:items-end justify-center items-center md:gap-12 gap-6">
         <div className="pb-11">
@@ -13,7 +13,7 @@ const Cases = () => {
               alt="one"
               className="md:max-w-full max-w-[300px]"
             />
-            <button className="absolute left-0 bottom-0 fancyButton lg:w-fit lg:p-5 w-12 p-2">
+            <button className="absolute left-0 bottom-0 fancyButton lg:w-fit lg:p-3 w-12 p-2">
               <IoIosArrowRoundForward size={30} className="relative" />
             </button>
           </div>
@@ -40,7 +40,7 @@ const Cases = () => {
               alt="two"
               className="md:max-w-full max-w-[300px]"
             />
-            <button className="absolute left-0 bottom-0 fancyButton lg:w-fit lg:p-5 w-12 p-2">
+            <button className="absolute left-0 bottom-0 fancyButton lg:w-fit lg:p-3 w-12 p-2">
               <IoIosArrowRoundForward size={30} className="relative" />
             </button>
           </div>
