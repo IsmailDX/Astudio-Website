@@ -5,7 +5,7 @@ const Cases = () => {
   return (
     <div className="w-full lg:px-[172px] md:px-[102px] mx-auto px-5 py-24">
       <h1 className="font-neutraface text-3xl text-primary pb-11">USE CASES</h1>
-      <div className="w-full flex md:flex-row flex-col md:items-end justify-center items-center md:gap-12 gap-6">
+      <div className="w-full flex md:flex-row flex-col md:items-end justify-center items-start md:gap-12 gap-6">
         <div className="pb-11">
           <div className="relative">
             <img

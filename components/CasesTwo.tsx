@@ -5,7 +5,7 @@ const CasesTwo = () => {
   return (
     <div className="w-full pb-20">
       <div className="flex md:flex-row flex-col relative lg:gap-24 md:gap-8 gap-12">
-        <div className="lg:pl-[172px] md:pl-[102px] mx-auto md:pr-0 sm:pr-[170px] s1:pr-[170px] pr-12  pl-5 w-fit flex flex-col justify-end">
+        <div className="lg:pl-[172px] md:pl-[102px] md:pr-0 sm:pr-[170px] pr-5  pl-5 w-fit flex flex-col justify-end">
           <div className="flex flex-col">
             <h2 className="uppercase text-primary text-lg font-neutraface whitespace-nowrap">
               Video — mancherster
