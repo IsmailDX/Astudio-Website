@@ -3,7 +3,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const CasesThree = () => {
   return (
-    <div className="w-full mx-auto flex justify-center px-5 py-10">
+    <div className="w-full mx-auto flex justify-center px-5 md:py-10 py-32">
       <div className="w-fit flex md:flex-row flex-col lg:gap-12 md:gap-5 relative justify-center">
         <div className="w-fit relative">
           <div className="relative w-fit">
