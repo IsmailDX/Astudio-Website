@@ -49,16 +49,20 @@ const WeDo = () => {
             </p>
           </div>
         </div>
+
         <div className="md:relative md:z-0 absolute top-0 left-0 -z-10 w-auto md:h-auto h-full">
           <div className="relative h-full">
             <img src="/cases/six.png" className="w-auto h-full object-cover" />
             <div className="absolute inset-0 md:bg-transparent bg-black/50"></div>
-            <button className="absolute md:left-0 sm:right-0 s1:right-0 s2:right-0 bottom-0 fancyButton w-fit p-3">
+            <button className="absolute md:left-0 sm:right-0 s1:right-0 s2:right-0 bottom-0 fancyButton w-fit p-3 z-10 md:opacity-100 opacity-0">
               <IoIosArrowRoundForward size={40} className="relative" />
             </button>
           </div>
         </div>
       </div>
+      <button className="absolute md:left-0 sm:right-0 s1:right-0 s2:right-0 bottom-0 fancyButton w-fit p-3 z-10 md:opacity-0 opacity-100">
+        <IoIosArrowRoundForward size={40} className="relative" />
+      </button>
     </div>
   );
 };

@@ -1,4 +1,12 @@
-import { Cases, CasesThree, CasesTwo, Goal, Hero, WeDo } from "@/components";
+import {
+  Believe,
+  Cases,
+  CasesThree,
+  CasesTwo,
+  Goal,
+  Hero,
+  WeDo,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -9,6 +17,7 @@ export default function Home() {
       <CasesTwo />
       <CasesThree />
       <WeDo />
+      <Believe />
     </main>
   );
 }
