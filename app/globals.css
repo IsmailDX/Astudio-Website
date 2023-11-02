@@ -89,6 +89,19 @@ button {
     display: block;
     margin-right: 30px;
   }
- 
+  
+  .div-1 {
+    width: 70%;
+    height: 100%;
+    background: #BFE5E6;
+    clip-path: polygon(0 0, 86% 0, 100% 100%, 0% 100%);
+  }
+
+  .div-2 {
+    width: 51%;
+    height: 100%;
+    background: red;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 50% 100%);
+  }
   
 }

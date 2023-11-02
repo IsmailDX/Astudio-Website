@@ -1,8 +1,10 @@
 import {
+  Awards,
   Believe,
   Cases,
   CasesThree,
   CasesTwo,
+  Clients,
   Goal,
   Hero,
   WeDo,
@@ -18,6 +20,8 @@ export default function Home() {
       <CasesThree />
       <WeDo />
       <Believe />
+      <Awards />
+      <Clients />
     </main>
   );
 }

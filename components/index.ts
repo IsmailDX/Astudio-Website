@@ -6,5 +6,18 @@ import CasesTwo from "./CasesTwo";
 import CasesThree from "./CasesThree";
 import WeDo from "./WeDo";
 import Believe from "./Believe";
+import Awards from "./Awards";
+import Clients from "./Clients";
 
-export { Navbar, Hero, Goal, Cases, CasesTwo, CasesThree, WeDo, Believe };
+export {
+  Navbar,
+  Hero,
+  Goal,
+  Cases,
+  CasesTwo,
+  CasesThree,
+  WeDo,
+  Believe,
+  Awards,
+  Clients,
+};
