@@ -57,7 +57,7 @@ const Navbar = () => {
       <div className="lg:w-full relative">
         <div className="flex justify-between py-6 w-full sm:px-10 px-3 items-center fixed overflow-hidden bg-white z-50">
           <h1 className="lg:text-4xl text-3xl tracking-widest font-neutraface z-auto text-primary">
-            ASTUDIO
+            <a href="/">ASTUDIO</a>
           </h1>
 
           <div className="absolute object-contain h-full lg:left-[55%] lg:w-[640px] w-[450px] left-[35%] -z-10">

@@ -59,7 +59,7 @@ function ParallaxText({ children, baseVelocity = 200 }: ParallaxProps) {
 
 const Believe = () => {
   return (
-    <section className="md:py-10 py-20">
+    <section className="md:py-10 py-20 text-primary">
       <ParallaxText baseVelocity={-5}>WE BELIEVE IN THE POWER</ParallaxText>
       <ParallaxText baseVelocity={5}>OF EXPOTETIAL GROWTH.</ParallaxText>
     </section>
