@@ -4,7 +4,7 @@ import { Box } from "@/components";
 
 const Clients = () => {
   return (
-    <div className="w-full max-w-[1100px] mx-auto">
+    <div className="w-full max-w-[1100px] mx-auto pb-28">
       <h1 className="text-2xl font-neutraface pb-16 pt-28 pl-10">CLIENTS</h1>
       <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 px-10">
         <Box

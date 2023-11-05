@@ -9,6 +9,7 @@ import Believe from "./Believe";
 import Awards from "./Awards";
 import Clients from "./Clients";
 import Box from "./Box";
+import Footer from "./Footer";
 
 export {
   Navbar,
@@ -22,4 +23,5 @@ export {
   Awards,
   Clients,
   Box,
+  Footer,
 };
