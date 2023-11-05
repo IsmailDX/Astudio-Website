@@ -8,6 +8,7 @@ import WeDo from "./WeDo";
 import Believe from "./Believe";
 import Awards from "./Awards";
 import Clients from "./Clients";
+import Box from "./Box";
 
 export {
   Navbar,
@@ -20,4 +21,5 @@ export {
   Believe,
   Awards,
   Clients,
+  Box,
 };
