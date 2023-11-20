@@ -3,6 +3,35 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Icon from "../public/hero/Menu_icon.png";
 import { VscChevronDown, VscChevronUp } from "react-icons/vsc";
+import { motion } from "framer-motion";
+
+const listVariants = {
+  hidden: {
+    opacity: 0,
+    transition: { duration: 0.1 },
+  },
+  visible: {
+    opacity: 1,
+  },
+};
+
+const listVariantsWork = {
+  hidden: {
+    x: "100vh",
+  },
+  visible: {
+    x: 0,
+  },
+};
+
+const arrowVarient = {
+  open: {
+    rotate: 0,
+  },
+  close: {
+    rotate: 180,
+  },
+};
 
 const links = [
   { page: "HOME" },
@@ -61,7 +90,13 @@ const Navbar = () => {
           </h1>
 
           <div className="absolute object-contain h-full lg:left-[55%] lg:w-[640px] w-[450px] left-[35%] -z-10">
-            <img src={"/hero/Rectangle.png"} alt="Rectangle" />
+            <motion.img
+              src={"/hero/Rectangle.png"}
+              alt="Rectangle"
+              initial={{ x: "-100vw" }}
+              animate={{ x: 0 }}
+              transition={{ duration: 0.3 }}
+            />
           </div>
 
           <p className="hidden lg:block pt-4">START A PROJECT</p>
@@ -91,30 +126,54 @@ const Navbar = () => {
         `}
       >
         <ul className="w-full space-y-4 pb-7 pl-4">
-          {links.map((item) => (
-            <li key={item.page} className="text-lg font-neutraface">
+          {links.map((item, index) => (
+            <motion.li
+              key={item.page}
+              className="text-lg font-neutraface"
+              variants={listVariants}
+              initial="hidden"
+              animate={open ? "visible" : "hidden"}
+              transition={{ duration: 0.5, ease: "easeIn", delay: index * 0.2 }}
+            >
               {item.page === "WORK" ? (
                 <span className="flex items-center gap-2">
                   {item.page}
-                  {workIcon ? (
-                    <VscChevronUp onClick={toggleWorkItems} />
-                  ) : (
-                    <VscChevronDown onClick={toggleWorkItems} />
-                  )}
+
+                  <motion.div
+                    onClick={() => {
+                      toggleWorkItems();
+                    }}
+                    initial="close"
+                    animate={showWorkItems ? "open" : "close"}
+                    variants={arrowVarient}
+                  >
+                    <VscChevronUp />
+                  </motion.div>
                 </span>
               ) : (
                 item.page
               )}
               {item.page === "WORK" && showWorkItems && (
                 <ul className="space-y-4 pt-4">
-                  {workItems.map((workitem) => (
-                    <li key={workitem} className="font-neutrafaceTextBook pl-6">
+                  {workItems.map((workitem, index) => (
+                    <motion.li
+                      key={workitem}
+                      className="font-neutrafaceTextBook pl-6"
+                      variants={listVariantsWork}
+                      transition={{
+                        duration: 0.5,
+                        type: "spring",
+                        mass: 0.4,
+                        damping: 8,
+                        delay: index * 0.2,
+                      }}
+                    >
                       {workitem}
-                    </li>
+                    </motion.li>
                   ))}
                 </ul>
               )}
-            </li>
+            </motion.li>
           ))}
         </ul>
         <button
