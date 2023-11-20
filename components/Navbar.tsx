@@ -10,18 +10,26 @@ const listVariants = {
     opacity: 0,
     transition: { duration: 0.1 },
   },
-  visible: {
+  visible: (index: number) => ({
     opacity: 1,
-  },
+    transition: { duration: 0.5, ease: "easeIn", delay: index * 0.2 },
+  }),
 };
 
 const listVariantsWork = {
   hidden: {
     x: "100vh",
   },
-  visible: {
+  visible: (index: number) => ({
     x: 0,
-  },
+    transition: {
+      duration: 0.5,
+      type: "spring",
+      mass: 0.4,
+      damping: 8,
+      delay: index * 0.2,
+    },
+  }),
 };
 
 const arrowVarient = {
@@ -133,7 +141,7 @@ const Navbar = () => {
               variants={listVariants}
               initial="hidden"
               animate={open ? "visible" : "hidden"}
-              transition={{ duration: 0.5, ease: "easeIn", delay: index * 0.2 }}
+              custom={index}
             >
               {item.page === "WORK" ? (
                 <span className="flex items-center gap-2">
@@ -160,13 +168,7 @@ const Navbar = () => {
                       key={workitem}
                       className="font-neutrafaceTextBook pl-6"
                       variants={listVariantsWork}
-                      transition={{
-                        duration: 0.5,
-                        type: "spring",
-                        mass: 0.4,
-                        damping: 8,
-                        delay: index * 0.2,
-                      }}
+                      custom={index}
                     >
                       {workitem}
                     </motion.li>
