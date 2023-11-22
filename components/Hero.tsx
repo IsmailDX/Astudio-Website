@@ -74,7 +74,7 @@ const Hero = () => {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
+              transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
               className="w-full sm:max-w-[550px] pr-2 md:ml-auto md:mr-0 mr-auto max-w-[450px]"
             >
               <img src={"/hero/A.png"} alt="logo" />
