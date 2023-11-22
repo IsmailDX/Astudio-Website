@@ -24,7 +24,7 @@ const Clients = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ type: "spring", mass: 0.8, damping: 6, delay: 0.3 }}
+          transition={{ type: "spring", mass: 0.8, damping: 6, duration: 0.3 }}
         >
           <Box
             image={"/brands/3.png"}
@@ -38,7 +38,7 @@ const Clients = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ type: "spring", mass: 0.8, damping: 6, delay: 0.5 }}
+          transition={{ type: "spring", mass: 0.8, damping: 6, duration: 0.3 }}
         >
           <Box
             image={"/brands/4.png"}
@@ -52,7 +52,7 @@ const Clients = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ type: "spring", mass: 0.8, damping: 6, delay: 0.7 }}
+          transition={{ type: "spring", mass: 0.8, damping: 6, duration: 0.3 }}
         >
           <Box
             image={"/brands/7.png"}
@@ -66,7 +66,7 @@ const Clients = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ type: "spring", mass: 0.8, damping: 6, delay: 0.9 }}
+          transition={{ type: "spring", mass: 0.8, damping: 6, duration: 0.3 }}
         >
           <Box
             image={"/brands/10.png"}
@@ -78,7 +78,7 @@ const Clients = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ type: "spring", mass: 0.8, damping: 6, delay: 1 }}
+          transition={{ type: "spring", mass: 0.8, damping: 6, duration: 0.3 }}
         >
           <Box
             image={"/brands/6.png"}
@@ -92,7 +92,7 @@ const Clients = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ type: "spring", mass: 0.8, damping: 6, delay: 1.2 }}
+          transition={{ type: "spring", mass: 0.8, damping: 6, duration: 0.3 }}
         >
           <Box
             image={"/brands/8.png"}
@@ -106,7 +106,7 @@ const Clients = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ type: "spring", mass: 0.8, damping: 6, delay: 1.4 }}
+          transition={{ type: "spring", mass: 0.8, damping: 6, duration: 0.3 }}
         >
           <Box
             image={"/brands/9.png"}
@@ -118,7 +118,7 @@ const Clients = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ type: "spring", mass: 0.8, damping: 6, delay: 1.6 }}
+          transition={{ type: "spring", mass: 0.8, damping: 6, duration: 0.3 }}
         >
           <Box
             image={"/brands/5.png"}
@@ -132,7 +132,7 @@ const Clients = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ type: "spring", mass: 0.8, damping: 6, delay: 1.8 }}
+          transition={{ type: "spring", mass: 0.8, damping: 6, duration: 0.3 }}
         >
           <Box
             image={"/brands/4.png"}
